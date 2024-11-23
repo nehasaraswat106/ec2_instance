@@ -1,8 +1,8 @@
-resource "aws_instance" "web" {
-  ami           = var.ami_id
-  instance_type = var.myinstance_type
-
+resource "aws_instance" "example" {
+  ami           = var.ami
+  instance_type = var.instance_type
+  key_name      = var.key_name
   tags = {
-    Name = "HelloWorld"
+    Name = "EC2Instance"
   }
 }
