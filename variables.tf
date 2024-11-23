@@ -1,3 +1,4 @@
+# EC2 Module Variables
 variable "instance_type" {
   description = "Type of EC2 instance"
   type        = string
@@ -11,7 +12,7 @@ variable "ami" {
 }
 
 variable "key_name" {
-  description = "Key pair name"
+  description = "Key pair name for EC2"
   type        = string
   default     = "terra-key"
 }
